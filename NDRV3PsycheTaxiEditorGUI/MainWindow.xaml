@@ -1,0 +1,96 @@
+﻿<Window x:Class="NDRV3PsycheTaxiEditorGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NDRV3PsycheTaxiEditorGUI"
+        mc:Ignorable="d"
+        Title="NDRV3PsycheTaxiEditorGUI" Height="600" Width="1400">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Padding" Value="16,10,16,10" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20">Chapter 2</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0">02_0 (Question 1)</TextBlock>
+        <Button Grid.Row="1" Grid.Column="1" Click="Button_Click" Tag="02_0">Edit</Button>
+        <TextBlock Grid.Row="2" Grid.Column="0">02_1 (Question 2)</TextBlock>
+        <Button Grid.Row="2" Grid.Column="1" Click="Button_Click" Tag="02_1">Edit</Button>
+        <TextBlock Grid.Row="3" Grid.Column="0">02_2 (Question 3)</TextBlock>
+        <Button Grid.Row="3" Grid.Column="1" Click="Button_Click" Tag="02_2">Edit</Button>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20">Chapter 3</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0">03_0 (Question 1)</TextBlock>
+        <Button Grid.Row="5" Grid.Column="1" Click="Button_Click" Tag="03_0">Edit</Button>
+        <TextBlock Grid.Row="6" Grid.Column="0">03_1 (Question 2)</TextBlock>
+        <Button Grid.Row="6" Grid.Column="1" Click="Button_Click" Tag="03_1">Edit</Button>
+        <TextBlock Grid.Row="7" Grid.Column="0">03_2 (Question 3)</TextBlock>
+        <Button Grid.Row="7" Grid.Column="1" Click="Button_Click" Tag="03_2">Edit</Button>
+
+        <TextBlock Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" FontSize="20">Chapter 4</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2">04_0 (Question 1-1)</TextBlock>
+        <Button Grid.Row="1" Grid.Column="3" Click="Button_Click" Tag="04_0">Edit</Button>
+        <TextBlock Grid.Row="2" Grid.Column="2">04_1 (Question 1-2)</TextBlock>
+        <Button Grid.Row="2" Grid.Column="3" Click="Button_Click" Tag="04_1">Edit</Button>
+        <TextBlock Grid.Row="3" Grid.Column="2">04_2 (Question 1-3)</TextBlock>
+        <Button Grid.Row="3" Grid.Column="3" Click="Button_Click" Tag="04_2">Edit</Button>
+        <TextBlock Grid.Row="4" Grid.Column="2">04_3 (Question 2-1)</TextBlock>
+        <Button Grid.Row="4" Grid.Column="3" Click="Button_Click" Tag="04_3">Edit</Button>
+        <TextBlock Grid.Row="5" Grid.Column="2">04_4 (Question 2-2)</TextBlock>
+        <Button Grid.Row="5" Grid.Column="3" Click="Button_Click" Tag="04_4">Edit</Button>
+        <TextBlock Grid.Row="6" Grid.Column="2">04_5 (Question 2-3)</TextBlock>
+        <Button Grid.Row="6" Grid.Column="3" Click="Button_Click" Tag="04_5">Edit</Button>
+        <TextBlock Grid.Row="7" Grid.Column="2">04_6 (Question 2-4)</TextBlock>
+        <Button Grid.Row="7" Grid.Column="3" Click="Button_Click" Tag="04_6">Edit</Button>
+
+        <TextBlock Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20">Chapter 5</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="4">05_0 (Question 1)</TextBlock>
+        <Button Grid.Row="1" Grid.Column="5" Click="Button_Click" Tag="05_0">Edit</Button>
+        <TextBlock Grid.Row="2" Grid.Column="4">05_1 (Question 2)</TextBlock>
+        <Button Grid.Row="2" Grid.Column="5" Click="Button_Click" Tag="05_1">Edit</Button>
+        <TextBlock Grid.Row="3" Grid.Column="4">05_2 (Question 3)</TextBlock>
+        <Button Grid.Row="3" Grid.Column="5" Click="Button_Click" Tag="05_2">Edit</Button>
+
+        <TextBlock Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="2" FontSize="20">Chapter 6</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="6">06_0 (Question 1-1)</TextBlock>
+        <Button Grid.Row="1" Grid.Column="7" Click="Button_Click" Tag="06_0">Edit</Button>
+        <TextBlock Grid.Row="2" Grid.Column="6">06_1 (Question 1-2)</TextBlock>
+        <Button Grid.Row="2" Grid.Column="7" Click="Button_Click" Tag="06_1">Edit</Button>
+        <TextBlock Grid.Row="3" Grid.Column="6">06_2 (Question 1-3)</TextBlock>
+        <Button Grid.Row="3" Grid.Column="7" Click="Button_Click" Tag="06_2">Edit</Button>
+        <TextBlock Grid.Row="4" Grid.Column="6">06_3 (Question 1-4)</TextBlock>
+        <Button Grid.Row="4" Grid.Column="7" Click="Button_Click" Tag="06_3">Edit</Button>
+        <TextBlock Grid.Row="5" Grid.Column="6">06_4 (Question 2-1)</TextBlock>
+        <Button Grid.Row="5" Grid.Column="7" Click="Button_Click" Tag="06_4">Edit</Button>
+    </Grid>
+</Window>
