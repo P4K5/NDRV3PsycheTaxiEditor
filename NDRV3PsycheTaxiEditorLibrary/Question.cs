@@ -18,9 +18,6 @@ namespace NDRV3PsycheTaxiEditorLibrary
 
         public Question(String question, String FileNumber)
         {
-            CultureInfo customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone();
-            customCulture.NumberFormat.NumberDecimalSeparator = ",";
-            Thread.CurrentThread.CurrentCulture = customCulture;
 
             this.FileNumber = FileNumber;
             NDRV3PsycheTaxiEditorLibrary.Layout.currentID = 0;
